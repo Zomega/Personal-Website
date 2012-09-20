@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    
+	<head>
+		<title>Alpha Sigma Phi - Beta Beta Chapter</title>
+		<link href="css/styles.css" rel="stylesheet" type="text/css">
+        <link href="css/carousel.css" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Raleway:100" rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Cabin:400,700" rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" href="favicon.ico"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+        <script src="js/slides.min.jquery.js"></script>
+        <script>
+                $(function(){
+                  $('#slides').slides({
+                                      preload: true,
+                                      preloadImage: 'img/loading.gif',
+                                      play: 7000,
+                                      pause: 7000,
+                                      hoverPause: true,
+                                      animationStart: function(current){
+                                      $('.caption').animate({
+                                                            bottom:-35
+                                                            },100);
+                                      if (window.console && console.log) {
+                                      // example return of current slide number
+                                      console.log('animationStart on slide: ', current);
+                                      };
+                                      },
+                                      animationComplete: function(current){
+                                      $('.caption').animate({
+                                                            bottom:0
+                                                            },200);
+                                      if (window.console && console.log) {
+                                      // example return of current slide number
+                                      console.log('animationComplete on slide: ', current);
+                                      };
+                                      },
+                                      slidesLoaded: function() {
+                                      $('.caption').animate({
+                                                            bottom:0
+                                                            },200);
+                                      }
+                                      });
+                  });
+            </script>
+	</head>
+    
+<body>
+            
+    <div id="header">
+        <div id="header_full_width_white_space"></div>
+        <div id="header_banner_white_space"></div>
+        <div id="header_content">
+            <div id="banner_content">
+                <div id="banner_title">ALPHA SIGMA PHI</div>
+                <div id="banner_stars_image"><img src="img/header-stars.png"></div>
+                <div id="banner_subtitle"><span class="text">at the Massachusetts Institute of Technology</span></div>   
+            </div>
+            <div id="links_content" style="top:-24px;">
+                <a href="whyalphasig.html" class="button" id="current_button" style="left:13px;"><img src="img/join-button-current.jpg"></a>
+                <a href="news.html" class="button" id="news" style="left:111px;"><span></span></a>
+                <a href="2015s.html" class ="button" id="members" style="left:209px;"><span></span></a>
+                <a href="chapter.html" class="button" id="chapter" style="left:307px;"><span></span></a>
+                <a href="http://www.alphasigmaphi.org" target="_blank" class="button" id="national" style="left:405px;"><span></span></a>
+            </div>
+            <div id="sublinks_content">
+                    <a href="whyalphasig.html" id="sublink"><span class="sublink">Why Alpha Sig</span></a>
+                    <a href="howwerecruit.html" id="sublink"><span class="sublink">How We Recruit</span></a>
+                    <a href="membership.html" id="sublink"><span class="sublink">Membership</span></a>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <div id="grey_center_region">
+        <div id="buffer_behind_header" style="height:140px;"></div>
+        <div id="text_box"><span class="text">Details about fees, requirements and time commitment.  We like to be up-front about these things.</span></div>
+        <center><img src="img/horizontal_break.png"></center>
+        <div id="story_title">MEMBERSHIP</div>
+        
+        <div id="story"><div id="placeholder"><img src="img/membership-placeholder.png"></div></div>
+    
+        <div id="buffer" style="height:50px; width:1000px;">
+            <center><img src="img/horizontal_break.png" style="position:relative; top:10px;"></center>
+        </div>
+
+    </div>
+            
+    
+    <div id="footer">
+        <div id="footer_content">
+            <div id="footer_column" style="left:0px;">
+                <span class="footer_column_title">Contents</span>
+                <br>
+                <br><a href="whyalphasig.html" class="footer_link">Join</a>
+                <br><a href="2015s.html" class="footer_link">Our Members</a>
+                <br><a href="chapter.html" class="footer_link">About the Chapter</a>
+                <br><a href="news.html" class="footer_link">News</a>
+            </div>
+            <div id="footer_column" style="left:250px;">
+                <span class="footer_column_title">Resources</span>
+                <br>
+                <br><a href="http://www.alphasigmaphi.org" target="_blank" class="footer_link">Alpha Sigma Phi, Inc.</a>
+                <br><a href="http://ifc.mit.edu/" target="_blank" class="footer_link">MIT Interfraternity Council</a>
+                <br><a href="http://web.mit.edu/reslife/fsilg/" target="_blank" class="footer_link">MIT FSILG Office</a>
+            </div>
+            <div id="footer_column" style="left:500px;">
+                <span class="footer_column_title">Address</span>
+                <br>
+                <br><a href="https://maps.google.com/maps?q=305+memorial+drive,+cambridge,+ma&hl=en&sll=42.357084,-71.09319&sspn=0.010164,0.022702&t=h&hnear=305+Memorial+Dr,+Cambridge,+Massachusetts+02139&z=16" target="_blank" class="footer_link">305 Memorial Drive <br> Cambridge, MA 02139</a>
+            </div>
+            <div id="footer_column" style="left:750px;">
+                <span class="footer_column_title">Contact Us</span>
+                <br>
+                <br><a href="mailto:alphasig@mit.edu" class="footer_link">alphasig at mit.edu</a>
+            </div>
+            <img src="img/seal.png" style="position:absolute; top:-70px; left:337px;">
+            <div id="copyright">Updated Aug 10 2012</div>
+        </div>
+    </div>
+
+
+</body>
+</html>
