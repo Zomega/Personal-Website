@@ -2,10 +2,34 @@
 	<head>
 		<title>Cosmos Darwin - Online Presence</title>
 		<link href="static/css/style.css" rel="stylesheet" type="text/css">
+		<link href="static/css/carousel.css" rel="stylesheet" type="text/css">
 		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<div class="slide">
+		<div class="whitespace">
+			 <div id="container">
+			<div id="slides">
+				<div class="slides_container">
+
+					<div class="slide">
+                        CONTENT1
+                    </div>
+					
+                    <div class="slide">
+                       	CONTENT2
+                    </div>
+					
+                    <div class="slide">
+                        CONTENT3
+                    </div>
+                    
+                    <div class="slide">
+                        CONTENT4
+                    </div>
+				</div>
+				<a href="#" class="prev"><img src="static/img/arrow-prev.png" border="0"></a>
+				<a href="#" class="next"><img src="static/img/arrow-next.png" border="0"></a>
+			</div>
 		</div>
 		<div class="nav-bar">
 			<center>
@@ -26,5 +50,44 @@
 				<img src="static/img/mapleleaf.png"/>
 			</div>
 		</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+        <script src="static/js/slides.min.jquery.js"></script>
+        <script>
+                $(function(){
+                  $('#slides').slides({
+                                      preload: true,
+                                      preloadImage: 'static/img/loading.gif',
+                                      play: 7000,
+                                      pause: 7000,
+                                      hoverPause: true,
+                                      animationStart: function(current){
+                                      $('.caption').animate({
+                                                            bottom:-35
+                                                            },100);
+                                      if (window.console && console.log) {
+                                      // example return of current slide number
+                                      console.log('animationStart on slide: ', current);
+
+                                      };
+                                      },
+                                      animationComplete: function(current){
+                                      $('.caption').animate({
+                                                            bottom:0
+                                                            },200);
+                                      if (window.console && console.log) {
+                                      // example return of current slide number
+                                      console.log('animationComplete on slide: ', current);
+                                      };
+                                      },
+                                      slidesLoaded: function() {
+                                      $('.caption').animate({
+                                                            bottom:0
+                                                            },200);
+                                      }
+                                      });
+
+                  });
+            </script>
 	</body>
 </html>
