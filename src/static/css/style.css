@@ -4,6 +4,6 @@ body{background-image:url("../img/back.jpg");height:100%;width:100%;margin:0px;c
 .slide{background-color:#ffffff;position:relative;top:50%;left:50%;margin-top:-360px;margin-left:-500px;height:600px;width:1000px;-moz-box-shadow:0 0 15px rgba(33, 33, 33, 0.2);-webkit-box-shadow:0 0 15px rgba(33, 33, 33, 0.2);box-shadow:0 0 15px rgba(33, 33, 33, 0.2);}
 .about-content{position:relative;top:50px;left:50px;width:500px;max-height:550px;}
 .nav-bar{background-color:#1164c3;position:fixed;width:100%;height:120px;bottom:0px;float:left;}
-.nav-links{width:720px;}.nav-links .current{font-weight:bold;}
-.nav-link{line-height:120px;float:left;margin-left:20px;margin-right:20px;color:#ffffff;font-size:40px;}
+.nav-links{width:650px;}.nav-links .current{font-weight:bold;}
+.nav-link{line-height:120px;float:left;margin-left:20px;margin-right:20px;color:#ffffff;font-size:40px;}.nav-link a{color:#ffffff;text-decoration:none;}
 .canada-fuck-yea{position:relative;float:right;top:38px;margin-right:100px;}
