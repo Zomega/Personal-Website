@@ -1,10 +1,35 @@
-body{background-image:url("../img/back.jpg");height:100%;width:100%;margin:0px;color:#535353;font-size:16px;font-family:'Lato',sans-serif;font-weight:400;font-smooth:always;}
+body {
+	background-image:url("../img/back.jpg");
+	height:100%;
+	width:100%;
+	margin:0px;
+	color:#535353;
+	font-size:16px;
+	font-family:'Lato',sans-serif;
+	font-weight:400;
+	font-smooth:always;
+}
 
-#firstname{color:#535353;font-size:60px;}
+h1 {
+	color:#457016;
+	font-weight:300;
+	line-height:40px;
+	font-size:60px;
+}
 
-#lastname{color:#1164c3;line-height:40px;font-weight:bold;font-size:60px;}
-
-.whitespace{background-color:#FFFFFF;position:relative;top:50%;left:50%;margin-top:-360px;margin-left:-500px;height:600px;width:1000px;-moz-box-shadow:0 0 15px rgba(33, 33, 33, 0.2);-webkit-box-shadow:0 0 15px rgba(33, 33, 33, 0.2);box-shadow:0 0 15px rgba(33, 33, 33, 0.2);}
+.whitespace{
+	background-color:#FFFFFF;
+	position:relative;
+	top:50%;
+	left:50%;
+	margin-top:-360px;
+	margin-left:-500px;
+	height:600px;
+	width:1000px;
+	-moz-box-shadow:0 0 15px rgba(33, 33, 33, 0.2);
+	-webkit-box-shadow:0 0 15px rgba(33, 33, 33, 0.2);
+	box-shadow:0 0 15px rgba(33, 33, 33, 0.2);
+}
 
 .leftpanel{
 	position:absolute;
@@ -25,16 +50,39 @@ body{background-image:url("../img/back.jpg");height:100%;width:100%;margin:0px;c
 .rightpanel{
 	position:absolute;
 	top:0px; left:500px;
-	background-image:url('../img/cosmos-darwin.jpg');
+	background-image:url('../img/will-oursler.jpg');
 	width:500px;
 	height:600px;
 }
 
 
-.nav-bar{background-color:#1164c3;position:fixed;width:100%;height:120px;bottom:0px;float:left;}
+.nav-bar{
+	background-color:#457016;
+	position:fixed;width:100%;
+	height:120px;
+	bottom:0px;
+	float:left;
+}
 
-.nav-links{width:540px}.nav-links .current{font-weight:bold;}
+.nav-links {
+	width:540px;
+}
 
-.nav-link{line-height:120px;float:left;margin-left:20px;margin-right:20px;color:#ffffff;font-size:32px;font-weight:300;}.nav-link a{color:#ffffff;text-decoration:none;}
+.nav-links .current {
+	font-weight:bold;
+}
 
-.canada-fuck-yea{position:relative;float:right;top:38px;margin-right:100px;}
+.nav-link {
+	line-height:120px;
+	float:left;
+	margin-left:20px;
+	margin-right:20px;
+	color:#ffffff;
+	font-size:32px;
+	font-weight:300;
+}
+
+.nav-link a {
+	color:#ffffff;
+	text-decoration:none;
+}

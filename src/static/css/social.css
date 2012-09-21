@@ -1,8 +1,8 @@
 .social{
   display: inline-block;
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 75px;
+  height: 75px;
 }
 .social span {
   position: absolute;
@@ -20,23 +20,13 @@
   opacity: 1;
 }
 
-#youtube{background: url(../img/youtube.jpg) no-repeat;}
-#youtube span {
-  background: url(../img/youtube.jpg) no-repeat;
-  background-position: -20px 0;
+#github{background: url(../img/github_sprite.png) no-repeat;}
+#github span {
+  background: url(../img/github_sprite.png) no-repeat;
+  background-position: -75px 0;
 }
-#twitter{background: url(../img/twitter.jpg) no-repeat;}
-#twitter span {
-  background: url(../img/twitter.jpg) no-repeat;
-  background-position: -20px 0;
-}
-#facebook{background: url(../img/facebook.jpg) no-repeat;}
-#facebook span {
-  background: url(../img/facebook.jpg) no-repeat;
-  background-position: -20px 0;
-}
-#linkedin{background: url(../img/linkedin.jpg) no-repeat;}
-#linkedin span {
-  background: url(../img/linkedin.jpg) no-repeat;
-  background-position: -20px 0;
+#gplus{background: url(../img/googleplus_sprite.png) no-repeat;}
+#gplus span {
+  background: url(../img/googleplus_sprite.png) no-repeat;
+  background-position: -75px 0;
 }
