@@ -7,13 +7,19 @@
 @main-height:		600px;
 
 @nav-bar-color:		@blue;
-@nav-bar-height:	160px;
+@nav-bar-height:	120px;
+
+@nav-link-width:	200px;
 
 body {
 	background-image:	url("../img/back.jpg");
 	height:				100%;
 	width:				100%;
 	margin: 0px;
+
+	font-color:@dark-grey;
+	font-size:50px;
+	font-family: 'Lato', sans-serif; font-weight: 300;
 } 
 
 
@@ -38,5 +44,22 @@ body {
 	width:				100%;
 	height:				@nav-bar-height;
 	bottom:				0px;
-	float:left;
+	float:				left;
+}
+
+.nav-links {
+	width:				4 * @nav-link-width;
+
+	.current {
+		font-weight: bold;
+	}
+}
+
+.nav-link {
+	line-height:		@nav-bar-height;
+	width:				@nav-link-width;
+	float:				left;
+
+	color:				@white;
+	font-size:			40px;
 }
