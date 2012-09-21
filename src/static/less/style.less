@@ -11,6 +11,8 @@
 
 body {
 	background-image:	url("../img/back.jpg");
+	height:				100%;
+	width:				100%;
 	margin: 0px;
 } 
 
@@ -32,10 +34,9 @@ body {
 
 .nav-bar {
 	background-color:	@nav-bar-color;
-	position:			relative;
+	position:			fixed;
 	width:				100%;
 	height:				@nav-bar-height;
-	top:				100%;
-	margin-top:			-@nav-bar-height;
+	bottom:				0px;
 	float:left;
 }
