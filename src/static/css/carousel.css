@@ -47,7 +47,7 @@
 */
 
 #slides .next, #slides .prev{
-	position:absolute; top:280px; left:29px;
+	position:absolute; top:280px; left:10px;
 	width:21px; height:40px;
 	display:block;
 	z-index:101;
@@ -55,19 +55,24 @@
 
 
 #slides .next{
-	left:950px;
+	left:971px;
 }
 
 .pagination {
+	position:absolute;
+	left:434px;
+	top:414px;
 	margin-left:auto;
     margin-right:auto;
-	width:110px;
+	width:90px;	
+	z-index:101;
 }
 
 .pagination li {
 	float:left;
 	margin:0px 1px 20px 0px;
 	list-style:none;
+	z-index:101;
 }
 
 .pagination li a {
@@ -79,8 +84,10 @@
 	background-position:0 0;
 	float:left;
 	overflow:hidden;
+	z-index:101;
 }
 
 .pagination li.current a {
 	background-position:0 -12px;
+	z-index:101;
 }
