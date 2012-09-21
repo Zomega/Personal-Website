@@ -1,15 +1,11 @@
-@blue:				#1164C3;
-@grey:				#E6E6E6;
-@dark-grey:			#535353;
-@white:				#FFFFFF;
+@import "color.less";
 
 @main-width:		1000px;
 @main-height:		600px;
 
 @nav-bar-color:		@blue;
 @nav-bar-height:	120px;
-
-@nav-link-width:	200px;
+@nav-bar-width:		720px;
 
 body {
 	background-image:	url("../img/back.jpg");
@@ -48,7 +44,7 @@ body {
 }
 
 .nav-links {
-	width:				4 * @nav-link-width;
+	width:				@nav-bar-width;
 
 	.current {
 		font-weight: bold;
@@ -57,9 +53,18 @@ body {
 
 .nav-link {
 	line-height:		@nav-bar-height;
-	width:				@nav-link-width;
 	float:				left;
+
+	margin-left:		20px;
+	margin-right:		20px;
 
 	color:				@white;
 	font-size:			40px;
+}
+
+.canada-fuck-yea {
+	position:		relative;
+	float:			right;
+	top:			@nav-bar-height / 2 - 22px;
+	margin-right:	100px;
 }
