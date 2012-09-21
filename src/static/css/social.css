@@ -1,32 +1,19 @@
-.social{
-  display: inline-block;
-  position: absolute;
-  width: 75px;
-  height: 75px;
-}
-.social span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0;
-  -webkit-transition: opacity 0.4s;
-  -moz-transition: opacity 0.4s;
-  -o-transition: opacity 0.4s;
-  transition: opacity 0.4s;
-}
-.social:hover span {
-  opacity: 1;
+.social {
+	width:			64px;
+	height:			64px;
+
+	float:			left;
+	margin-right:	10px;
 }
 
-#github{background: url(../img/github_sprite.png) no-repeat;}
-#github span {
-  background: url(../img/github_sprite.png) no-repeat;
-  background-position: -75px 0;
+.social img {
+	width:			64px;
+	height:			64px;
+	max-width:		64px;
+	max-height:		64px;
 }
-#gplus{background: url(../img/googleplus_sprite.png) no-repeat;}
-#gplus span {
-  background: url(../img/googleplus_sprite.png) no-repeat;
-  background-position: -75px 0;
+
+.social:hover {
+	opacity:		0.8;
+	filter:			alpha(opacity=80); /* For IE8 and earlier */
 }

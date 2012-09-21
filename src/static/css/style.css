@@ -50,11 +50,9 @@ h1 {
 .rightpanel{
 	position:absolute;
 	top:0px; left:500px;
-	background-image:url('../img/will-oursler.jpg');
 	width:500px;
 	height:600px;
 }
-
 
 .nav-bar{
 	background-color:#457016;

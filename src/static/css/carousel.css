@@ -29,22 +29,10 @@
 	display:none;
 }
 
-/*
-	Each slide
-	Important:
-	Set the width of your slides
-	If height not specified height will be set by the slide content
-	Set to display block
-*/
-
 .slides_container div.slide {
 	width:1000px; height:600px;
 	display:block;
 }
-
-/*
-	Next/prev buttons
-*/
 
 #slides .next, #slides .prev{
 	position:absolute; top:280px; left:10px;
@@ -80,7 +68,7 @@
 	width:12px;
 	height:0;
 	padding-top:12px;
-	background-image:url(../img/pagination.png);
+	background-image:url(../img/pagination.svg);
 	background-position:0 0;
 	float:left;
 	overflow:hidden;
