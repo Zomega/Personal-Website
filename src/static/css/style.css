@@ -13,6 +13,7 @@ body{background-image:url("../img/back.jpg");height:100%;width:100%;margin:0px;c
 	width:500px;
 	height:600px;
 }
+
 .leftpanel_content{
 	position:absolute;
 	top:50px; left:50px;
