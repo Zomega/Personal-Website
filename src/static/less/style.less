@@ -1,7 +1,7 @@
 @import "color.less";
 
-@main-width:		1000px;
-@main-height:		600px;
+@slide-width:		1000px;
+@slide-height:		600px;
 
 @nav-bar-color:		@blue;
 @nav-bar-height:	120px;
@@ -13,25 +13,44 @@ body {
 	width:				100%;
 	margin: 0px;
 
-	font-color:@dark-grey;
-	font-size:50px;
+	color:@dark-grey;
+	font-size: 18px;
 	font-family: 'Lato', sans-serif; font-weight: 300;
 } 
 
+#firstname {
+	color:				@dark-grey;
+	font-size:			60px;
+}
+
+#lastname {
+	color:				@blue;
+
+	line-height:		40px;
+	font-weight:		bold;
+	font-size:			60px;
+}
 
 .slide {
 	background-color:	@white;
 	position:			relative;
 	top:				50%;
 	left:				50%;
-	margin-top:			-(@main-height + @nav-bar-height) / 2;
-	margin-left:		-@main-width / 2;
-	height:				@main-height;
-	width:				@main-width;
+	margin-top:			-(@slide-height + @nav-bar-height) / 2;
+	margin-left:		-@slide-width / 2;
+	height:				@slide-height;
+	width:				@slide-width;
 
 	-moz-box-shadow:	0 0 15px rgba(33,33,33,0.2);
     -webkit-box-shadow:	0 0 15px rgba(33,33,33,0.2);
     box-shadow:			0 0 15px rgba(33,33,33,0.2);
+}
+
+.about-content {
+	position:			relative;
+	top:				50px;
+	margin:				70px;
+	width:				500px;
 }
 
 .nav-bar {
