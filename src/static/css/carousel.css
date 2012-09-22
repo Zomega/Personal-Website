@@ -5,22 +5,11 @@
 	margin:auto;
 }
 
-/*
-	Slideshow
-*/
-
 #slides {
 	position:absolute;
 	z-index:100;
     background:#FFFFFF;
 }
-
-/*
-	Slides container
-	Important:
-	Set the width of your slides container
-	Set to display none, prevents content flash
-*/
 
 .slides_container {
 	position:relative;
@@ -68,14 +57,13 @@
 	width:12px;
 	height:0;
 	padding-top:12px;
-	background-image:url(../img/pagination.svg);
-	background-position:0 0;
+	background-image:url(../img/bullet-gray.svg);
 	float:left;
 	overflow:hidden;
 	z-index:101;
 }
 
 .pagination li.current a {
-	background-position:0 -12px;
+	background-image:url(../img/bullet-green.svg);
 	z-index:101;
 }
