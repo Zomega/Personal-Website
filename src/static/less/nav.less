@@ -1,14 +1,18 @@
+@nav-bar-height:		120px;
+@nav-link-spacing:		40px;
+
 .nav-bar{
 	background-color:	@accent;
 	position:			fixed;
 	width:				100%;
-	height:				120px;
+	height:				@nav-bar-height;
 	bottom:				0px;
 	float:				left;
 }
 
 .nav-links {
 	width:				540px;
+	margin:				0 auto;
 
 	.current {
 		font-weight:	bold;
@@ -16,10 +20,14 @@
 }
 
 .nav-link {
-	line-height:		120px;
+	line-height:		@nav-bar-height;
+
+	text-align:			center;
+
+	margin-left:		@nav-link-spacing / 2;
+	margin-right:		@nav-link-spacing / 2;
 	float:				left;
-	margin-left:		20px;
-	margin-right:		20px;
+
 	color:				@off-accent;
 	font-size:			32px;
 	font-weight:		300;
