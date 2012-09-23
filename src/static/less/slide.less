@@ -1,19 +1,17 @@
 .slide-image {
-	width:				100%;
-	height:				460;	
+	width:					@slide-image-width;
+	height:					@slide-image-height;	
 }
 
 .slide-description {
-	background-image:	url("../img/slide-background.png");
-	position:			absolute;
-	width:				100%;
-	height:				140px;
-	top:				100%;
-	margin-top:			-140px;
-	float:				left;
+	width:					@slide-description-width;
+	height:					@slide-description-height;
+
+	background-image:		url("../img/slide-background.png");
 
 	.text {
-		margin: 20px;
+		padding: 			20px;
+		text-align:			justify;
 		h1 {
 			color:			@dark-grey;
 			font-weight:	300;

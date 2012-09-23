@@ -1,62 +1,85 @@
 @import "color.less";
 
+@center-pane-width:			1000px;
+@center-pane-height:		600px;
+
+@nav-bar-height:			120px;
+@nav-link-spacing:			40px;
+
+@slide-width:				@center-pane-width;
+@slide-height:				@center-pane-height;
+
+@slide-image-width:			@slide-width;
+@slide-image-height:		460px;
+
+@slide-description-width:	@slide-width;
+@slide-description-height:	@slide-height - @slide-image-height;
+
+@social-icon-size:			64px;
+@social-icon-spacing:		10px;
+
 @import "carousel.less";
 @import "social.less";
-@import "slide.less";
+
 @import "nav.less";
 
+@import "slide.less";
+
 body {
-	background-image:url("../img/back.jpg");
-	height:100%;
-	width:100%;
-	margin:0px;
-	color:		@dark-grey;
-	font-size:16px;
-	font-family:'Lato',sans-serif;
-	font-weight:400;
-	font-smooth:always;
+	background-image:		url("../img/back.jpg");
+	height:					100%;
+	width:					100%;
+	margin:					0px;
+	color:					@dark-grey;
+	font-size:				16px;
+	font-family:			'Lato',sans-serif;
+	font-weight:			400;
+	font-smooth:			always;
 }
 
 h1 {
-	color:		@accent;
-	font-weight:300;
-	line-height:40px;
-	font-size:60px;
+	color:					@accent;
+	font-weight:			300;
+	display:				inline;
+	font-size:				60px;
 }
 
-.whitespace {
-	background-color:	@white;
-	position:relative;
-	top:50%;
-	left:50%;
-	margin-top:-360px;
-	margin-left:-500px;
-	height:600px;
-	width:1000px;
-	-moz-box-shadow:0 0 15px rgba(33, 33, 33, 0.2);
-	-webkit-box-shadow:0 0 15px rgba(33, 33, 33, 0.2);
-	box-shadow:0 0 15px rgba(33, 33, 33, 0.2);
+.center-pane {
+	background-color:		@white;
+	position:				relative;
+	top:					50%;
+	left:					50%;
+	margin-top:				-( @center-pane-height + @nav-bar-height ) / 2;
+	margin-left:			-@center-pane-width / 2;
+	height:					@center-pane-height;
+	width:					@center-pane-width;
+	-moz-box-shadow:		0 0 15px rgba(33, 33, 33, 0.2);
+	-webkit-box-shadow:		0 0 15px rgba(33, 33, 33, 0.2);
+	box-shadow:				0 0 15px rgba(33, 33, 33, 0.2);
 }
 
 .leftpanel {
-	position:absolute;
-	top:0px; left:0px;
-	background-image:url('../img/left-panel-background.jpg');
-	width:500px;
-	height:600px;
+	position:				absolute;
+	top:					0px;
+	left:					0px;
+	background-image:		url('../img/left-panel-background.jpg');
+	width:					500px;
+	height:					@center-pane-height;
 }
 
 .leftpanel_content{
-	position:absolute;
-	top:50px; left:50px;
-	width:400px;
-	height:500px;
-	text-align:justify;
+	position:				absolute;
+	top:					50px;
+	left:					50px;
+	width:					400px;
+	height:					500px;
+	text-align:				justify;
 }
 
 .rightpanel {
-	position:absolute;
-	top:0px; left:500px;
-	width:500px;
-	height:600px;
+	position:				absolute;
+	top:					0px;
+	left:					500px;
+	width:					500px;
+	height:					600px;
 }
