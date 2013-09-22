@@ -1,9 +1,16 @@
+@num-social: 3;
+.social-container {
+	position: absolute;
+	bottom: 40px;
+	left: ( @half-pane-width - 3*(@social-icon-size+@social-icon-spacing) ) / 2;
+}
+
 .social {
 	width:				@social-icon-size;
 	height:				@social-icon-size;
 
 	float:				left;
-	margin-right:		@social-icon-spacing;
+	margin-right:			@social-icon-spacing;
 
 	img {
 		width:			@social-icon-size;

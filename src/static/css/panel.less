@@ -1,0 +1,38 @@
+.center-pane {
+	background-color:			@white;
+	position:				relative;
+	top:					50%;
+	left:					50%;
+	margin-top:				-( @center-pane-height + @nav-bar-height ) / 2;
+	margin-left:				-@center-pane-width / 2;
+	height:					@center-pane-height;
+	width:					@center-pane-width;
+	-moz-box-shadow:			0 0 15px @shadow-grey;
+	-webkit-box-shadow:			0 0 15px @shadow-grey;
+	box-shadow:				0 0 15px @shadow-grey;
+}
+
+.left-panel {
+	position:				absolute;
+	top:					0px;
+	left:					0px;
+	background-image:			url('../img/left-panel-background.jpg');
+	width:					@half-pane-width;
+	height:					@center-pane-height;
+}
+
+.left-panel-content{
+	position:				absolute;
+	margin:					@panel-content-margin;
+	width:					@panel-content-width;
+	height:					@panel-content-height;
+	text-align:				justify;
+}
+
+.right-panel {
+	position:				absolute;
+	top:					0px;
+	left:					500px;
+	width:					@half-pane-width;
+	height:					@center-pane-height;
+}
