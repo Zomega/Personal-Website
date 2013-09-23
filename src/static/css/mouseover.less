@@ -1,0 +1,70 @@
+@import "color.less";
+
+@square-size: 400px;
+@square-spacing: 20px;
+
+.square-expand-text( @opac ) {
+	transition: opacity 0.5s;
+	width:100%;
+	margin-top:40px;
+	height:60px;
+	background-color: @shadow-grey;
+	color: @white;
+	line-height:60px;
+	font-size:50px;
+	opacity: @opac;
+}
+
+.square-expand {
+	float: left;
+	position: relative;
+	background-color: @green;
+	width:@square-size;
+	height:@square-size;
+	margin:@square-spacing/2;
+	transition: z-index 0.05s, width 0.5s, height 0.5s, margin 0.5s, background-color 0.5s, transform 0.5s;
+	-webkit-transition: z-index 0.05s, width 0.5s, height 0.5s, margin 0.5s, background-color 0.5s, -webkit-transform 0.5s;
+	z-index: 5;
+	.square-expand-text {
+		.square-expand-text(0.0);
+	}
+	&:hover {
+		z-index: 9;
+		background-color: @blue;
+		.square-expand-text {
+			.square-expand-text(1.0);
+		}
+	}
+}
+
+.square-expand-right {
+	.square-expand;
+	&:hover {
+		width: 2*@square-size + @square-spacing;
+		margin-right: -( @square-size + @square-spacing/2 );
+	}
+}
+
+.square-expand-left {
+	.square-expand;
+	&:hover {
+		width: 2 * @square-size + @square-spacing;
+		margin-left: -( @square-size + @square-spacing/2 );
+	}
+}
+
+.square-expand-down {
+	.square-expand;
+	&:hover {
+		height: 2 * @square-size + @square-spacing;
+		margin-bottom: -( @square-size + @square-spacing/2 );
+	}
+}
+
+.square-expand-up {
+	.square-expand;
+	&:hover {
+		height: 2 * @square-size + @square-spacing;
+		margin-top: -( @square-size + @square-spacing/2 );
+	}
+}

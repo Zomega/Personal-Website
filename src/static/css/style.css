@@ -16,5 +16,6 @@
 .left-panel{position:absolute;top:0px;left:0px;background-image:url('../img/left-panel-background.jpg');width:500px;height:600px;}
 .left-panel-content{position:absolute;margin:50px;width:400px;height:500px;text-align:justify;}
 .right-panel{position:absolute;top:0px;left:500px;width:500px;height:600px;}
-body{background-image:url("../img/back.jpg");height:100%;width:100%;margin:0px;color:#535353;font-size:16px;font-family:'Lato',sans-serif;font-weight:400;font-smooth:always;}
+*{color:#535353;font-size:16px;font-family:'Lato',sans-serif;font-weight:400;font-smooth:always;}
+body{background-image:url("../img/back.jpg");height:100%;width:100%;margin:0px;}
 h1{color:#457016;font-weight:300;display:inline;font-size:60px;}
