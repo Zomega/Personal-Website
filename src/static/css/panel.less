@@ -1,4 +1,5 @@
 .center-pane {
+	overflow:				hidden;
 	background-color:			@white;
 	position:				relative;
 	top:					50%;
@@ -12,7 +13,15 @@
 	box-shadow:				0 0 15px @shadow-grey;
 }
 
+.half-pane-image {
+	position:				absolute;
+	top:					0px;
+	left:					0px;
+	min-height:				100%;
+}
+
 .left-panel {
+	overflow:				hidden;
 	position:				absolute;
 	top:					0px;
 	left:					0px;
@@ -22,6 +31,7 @@
 }
 
 .left-panel-content{
+	overflow:				hidden;
 	position:				absolute;
 	margin:					@panel-content-margin;
 	width:					@panel-content-width;
@@ -32,7 +42,7 @@
 .right-panel {
 	position:				absolute;
 	top:					0px;
-	left:					500px;
+	left:					@half-pane-width;
 	width:					@half-pane-width;
 	height:					@center-pane-height;
 }

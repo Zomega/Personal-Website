@@ -3,103 +3,61 @@
 		<title>Will Oursler - Online Presence</title>
 		<link href="static/css/style.css" rel="stylesheet" type="text/css">
 		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-		<script src="static/js/slides.min.jquery.js"></script>
-        <script>
-                $(function(){
-                  $('#slides').slides({
-                                      preload: true,
-                                      preloadImage: 'static/img/loading.gif',
-                                      play: 5000,
-                                      pause: 5000,
-                                      hoverPause: true,
-                                      animationStart: function(current){
-                                      $('.caption').animate({
-                                                            bottom:-35
-                                                            },100);
-                                      if (window.console && console.log) {
-                                      // example return of current slide number
-                                      console.log('animationStart on slide: ', current);
-
-                                      };
-                                      },
-                                      animationComplete: function(current){
-                                      $('.caption').animate({
-                                                            bottom:0
-                                                            },200);
-                                      if (window.console && console.log) {
-                                      // example return of current slide number
-                                      console.log('animationComplete on slide: ', current);
-                                      };
-                                      },
-                                      slidesLoaded: function() {
-                                      $('.caption').animate({
-                                                            bottom:0
-                                                            },200);
-                                      }
-                                      });
-
-                  });
-            </script>
-			<meta http-equiv="Pragma" content="no-cache"/>
+		<meta http-equiv="Pragma" content="no-cache"/>
 	</head>
 	<body>
 		<a href="https://github.com/zomega/Personal-Website"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_white_ffffff.png" alt="Fork me on GitHub"></a>
 		<div class="center-pane">
-			<div id="container">
-				<div id="slides">
-					<div class="slides_container">
-
-						<div class="slide">
-							<div class="slide-image">
-								<img src="static/img/dashboard.png">
-							</div>
-							<div class="slide-description">
-								<div class="text">
-									<h1>Simmons Hall Dashboard</h1><br/>
-									Dashboard is a HTML5 Application displayed on multiple television screens throughout Simmons Hall at MIT. It's designed to provide residents with information they use on a daily basis. I did most of the front end styling for Dashboard using LESS and CoffeeScript. <a href="http://simmons-dev.mit.edu/dashboard">A development version of the site is here.</a> Dashboard has a very specific deployment target, so little effort has been made to ensure browser compatibility.					</div>
-							</div>
-		                </div>
-
-						<div class="slide">
-							<div class="slide-image">
-								<img src="static/img/maslab.jpg">
-							</div>
-							<div class="slide-description">
-								<div class="text">
-									<h1>MASLAB 2012</h1><br/>
-									MASLAB (Mobile Autonomous Systems Laboratory) is MIT's most intense IAP robotics competition. Participants are asked to design, CAD, build, program, and test their robots from scratch in just over a month. Robots then compete in a ladder tournament. I served on a team of four freshmen at our mechanical systems engineer.
-								</div>
-							</div>
-		                </div>
-
-						<div class="slide">
-							<div class="slide-image">
-								<img src="static/img/scanner.jpg">
-							</div>
-							<div class="slide-description">
-								<div class="text">
-									<h1>3D Scanner</h1><br/>
-									During my Junior Year of high school, I became very interested in 3d Prototyping. As part of this interest, I set out to build something capable of scanning small objects. I devised a low-cost solution using only parts I had on hand, like an astronomy laser, a chemistry kit stirring rod, a web cam, and KNEX. I was able to reconstruct point clouds of several objects at a reasonable resolution.
-								</div>
-							</div>
-		                </div>
-
-						<div class="slide">
-							<div class="slide-image">
-								<img src="static/img/more.png">
-							</div>
-							<div class="slide-description">
-								<div class="text">
-									<h1>Check Back for Updates</h1><br/>
-									It's rare to hear that I'm not working on some new project. Some turn out to be impractical or more complex than anticipated, but I do my best to learn from my failures, and replicate my successes. I'll update this space as I complete new projects.
-								</div>
-							</div>
-		                </div>
+			<div class="drawer-container">
+				<a href="index.html">
+					<div class="drawer-right">
+						<img src="static/img/hires/image01.jpg"/>
+						<div class="drawer-text">
+							&nbsp;&nbsp;&nbsp;&nbsp;Test 1	
+						</div>	
 					</div>
-					<a href="#" class="prev"><img src="static/img/arrow-prev.png" border="0"></a>
-					<a href="#" class="next"><img src="static/img/arrow-next.png" border="0"></a>
-				</div>
+				</a>
+				<a href="index.html">
+					<div class="drawer-left">
+						<img src="static/img/hires/image03.jpg"/>
+						<div class="drawer-text">
+							&nbsp;&nbsp;&nbsp;&nbsp;Test 3	
+						</div>	
+					</div>
+				</a>
+				<a href="index.html">
+					<div class="drawer-left">
+						<img src="static/img/hires/image04.jpg"/>
+						<div class="drawer-text">
+							&nbsp;&nbsp;&nbsp;&nbsp;Test 4	
+						</div>
+					</div>
+				</a>
+				<br/>
+				<a href="index.html">
+					<div class="drawer-right">
+						<img src="static/img/hires/image05.jpg"/>
+						<div class="drawer-text">
+							&nbsp;&nbsp;&nbsp;&nbsp;Test 5	
+						</div>	
+					</div>
+				</a>
+				<a href="index.html">
+					<div class="drawer-right">
+						<img src="static/img/hires/image07.jpg"/>
+						<div class="drawer-text">
+							&nbsp;&nbsp;&nbsp;&nbsp;Test 7	
+						</div>
+					</div>
+				</a>
+				<a href="index.html">
+					<div class="drawer-left">
+						<img src="static/img/hires/image08.jpg"/>
+						<div class="drawer-text">
+							&nbsp;&nbsp;&nbsp;&nbsp;Test 8	
+						</div>	
+					</div>
+				</a>
 			</div>
 		</div>
 		<div class="nav-bar">

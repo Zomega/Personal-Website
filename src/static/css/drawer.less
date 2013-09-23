@@ -1,0 +1,75 @@
+@import "color.less";
+
+a {
+	text-decoration:none;
+}
+
+.drawer-container {
+	padding:@drawer-spacing/2;
+}
+
+.drawer-text( @opac ) {
+	position: absolute;
+	transition: opacity 0.5s;
+	width:100%;
+	top:40px;
+	height:60px;
+	background-color: @shadow-dark-grey;
+	color: @white;
+	line-height:60px;
+	font-size:50px;
+	opacity: @opac;
+}
+
+.drawer {
+	float: left;
+	overflow: hidden;
+	position: relative;
+	width:@drawer-size;
+	height:@drawer-size;
+	margin:@drawer-spacing/2;
+	transition: z-index 0.5s, width 0.5s, height 0.5s, margin 0.5s, background-color 0.5s, transform 0.5s;
+	-webkit-transition: z-index 0.05s, width 0.5s, height 0.5s, margin 0.5s, background-color 0.5s, -webkit-transform 0.5s;
+	z-index: 8;
+	.drawer-text {
+		.drawer-text(0.0);
+	}
+	&:hover {
+		z-index: 20;
+		.drawer-text {
+			.drawer-text(1.0);
+		}
+	}
+}
+
+.drawer-right {
+	.drawer;
+	&:hover {
+		width: 2*@drawer-size + @drawer-spacing;
+		margin-right: -( @drawer-size + @drawer-spacing/2 );
+	}
+}
+
+.drawer-left {
+	.drawer;
+	&:hover {
+		width: 2 * @drawer-size + @drawer-spacing;
+		margin-left: -( @drawer-size + @drawer-spacing/2 );
+	}
+}
+
+.drawer-down {
+	.drawer;
+	&:hover {
+		height: 2 * @drawer-size + @drawer-spacing;
+		margin-bottom: -( @drawer-size + @drawer-spacing/2 );
+	}
+}
+
+.drawer-up {
+	.drawer;
+	&:hover {
+		height: 2 * @drawer-size + @drawer-spacing;
+		margin-top: -( @drawer-size + @drawer-spacing/2 );
+	}
+}
